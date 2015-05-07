@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+
+
+    <EditText
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Titulo de la nota (preferiblemente corto)"
+        android:textAlignment="center"
+
+        />
+    <EditText
+        android:layout_below="@+id/editText1"
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/notas"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/guardar" />
+</RelativeLayout>

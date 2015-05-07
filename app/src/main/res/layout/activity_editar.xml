@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <EditText
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Titulo de la nota (preferiblemente corto)"
+        android:textAlignment="center"
+
+        android:gravity="center_horizontal" />
+    <EditText
+        android:layout_below="@+id/editText1"
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/notas"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/guardar" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/center"
+        android:scaleType="centerCrop"
+        android:background="#ffffffff" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/derecha"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/editText"
+        android:layout_toRightOf="@+id/guardar"
+        android:layout_toEndOf="@+id/guardar"
+        android:background="#ffffffff" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton3"
+        android:src="@drawable/left"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/editText"
+        android:layout_toLeftOf="@+id/guardar"
+        android:layout_toStartOf="@+id/guardar"
+        android:background="#ffffffff" />
+
+</RelativeLayout>

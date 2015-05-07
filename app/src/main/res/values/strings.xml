@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NoteBook</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="guardar">Guardar Nota</string>
+    <string name="dev">Desarrollador</string>
+    <string name="notas">Empieza a escribir tu nota!</string>
+    <string name="title_activity_notas">Notas guardadas</string>
+    <string name="Nueva">Nueva nota</string>
+    <string name="title_activity_editar">Editar notas</string>
+
+</resources>
